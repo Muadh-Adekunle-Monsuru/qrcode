@@ -6,7 +6,7 @@ import './index.css';
 import ErrorPage from './error-page';
 import Body from './body.tsx';
 import Student from './students.tsx';
-
+import NewDetails from './newhome.tsx';
 const router = createBrowserRouter([
 	{
 		path: '/',
@@ -19,7 +19,11 @@ const router = createBrowserRouter([
 			},
 			{
 				path: 'students/:studentId',
-				element: <Student />,
+				element: <NewDetails />,
+			},
+			{
+				path: 'newstudents/:studentId',
+				element: <NewDetails />,
 			},
 		],
 	},

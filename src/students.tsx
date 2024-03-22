@@ -31,13 +31,26 @@ export default function Student() {
 
 	return (
 		<>
-			<div className='grid w-full h-1/2  p-10'>
-				<div>Student ID: {data.studentId}</div>
-				<div>First Name: {data.firstName}</div>
-				<div>Second Name: {data.secondName}</div>
-				<div>Cohort: {data.cohort}</div>
-				<div>Debt Status: {data.debitStatus}</div>
-				<div>Debt Amount: {data.debitAmount}</div>
+			<div className='grid w-full h-1/2  p-10 text-xl'>
+				<div>
+					<span className='font-bold'>Student ID:</span> {data.studentId}
+				</div>
+				<div>
+					<span className='font-bold'>First Name:</span>
+					{data.firstName}
+				</div>
+				<div>
+					<span className='font-bold'>Second Name:</span> {data.secondName}
+				</div>
+				<div>
+					<span className='font-bold'>Cohort:</span> {data.cohort}
+				</div>
+				<div>
+					<span className='font-bold'>Debt Status:</span> {data.debitStatus}
+				</div>
+				<div>
+					<span className='font-bold'>Debt Amount:</span> {data.debitAmount}
+				</div>
 			</div>
 		</>
 	);
