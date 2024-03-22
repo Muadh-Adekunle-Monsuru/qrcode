@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import supabase from './supabase';
+import { useParams } from 'react-router-dom';
 
 export default function Student() {
 	const [data, setData] = useState({
@@ -10,13 +11,14 @@ export default function Student() {
 		debitStatus: '',
 		debitAmount: '',
 	});
+	let { studentId } = useParams();
 	const fetchData = async () => {
 		try {
 			let { data } = await supabase
 				.from('students')
 				.select()
-				.eq('studentId', '1');
-			console.log(data);
+				.eq('studentId', `${studentId}`);
+			// console.log(data);
 			setData(data[0]);
 		} catch (e) {
 			console.log('Error fetching data');
