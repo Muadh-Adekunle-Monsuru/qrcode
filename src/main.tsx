@@ -5,7 +5,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import ErrorPage from './error-page';
 import Body from './body.tsx';
-import Student from './students.tsx';
 import NewDetails from './newhome.tsx';
 const router = createBrowserRouter([
 	{

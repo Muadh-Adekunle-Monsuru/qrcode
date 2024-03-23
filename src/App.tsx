@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './Header';
 import { Outlet } from 'react-router-dom';
-import NewDetails from './newhome';
 function App() {
 	return (
 		<div className='h-full'>
